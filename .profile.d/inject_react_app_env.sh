@@ -8,7 +8,7 @@ set -x
 # Each bundle is generated with a unique hash name
 # to bust browser cache.
 js_bundle=/app/build/static/js/main.*.js
-echo "Checking if the main.*.js file exists..."
+echo 'Checking if the main.*.js file exists...'
 
 if [ -f $js_bundle ]
 then

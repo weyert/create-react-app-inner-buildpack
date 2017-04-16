@@ -58,3 +58,6 @@ export_env_dir "$ENV_DIR" '^(REACT_APP_|NODE_)'
 
 # Build the javascript bundle
 npm run build
+
+echo 'Completed build.'
+`ls $BUILD_DIR`
