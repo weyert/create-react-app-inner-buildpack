@@ -60,4 +60,3 @@ export_env_dir "$ENV_DIR" '^(REACT_APP_|NODE_)'
 npm run build
 
 echo 'Completed build.'
-`ls $BUILD_DIR`
