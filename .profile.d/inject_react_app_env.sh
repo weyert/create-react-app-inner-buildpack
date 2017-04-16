@@ -3,11 +3,14 @@
 # Fail immediately on non-zero exit code.
 set -e
 # Debug, echo every command
-#set -x
+set -x
 
 # Each bundle is generated with a unique hash name
 # to bust browser cache.
 js_bundle=/app/build/static/js/main.*.js
+echo "Relevant files: $js_bundle"
+available_files=`ls /app/`
+echo "All available files: $available_files"
 
 if [ -f $js_bundle ]
 then
